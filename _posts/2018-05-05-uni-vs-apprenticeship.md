@@ -7,7 +7,9 @@ tags: [sample]
 image: uni-vs-apprenticeship.jpg
 ---
 
-As you might have guessed from the title - I haven’t followed the traditional route when it comes to my education or my career.  I’m am Apprentice Software Engineer at Kainos, a Belfast based, digital technology company. I started back in September 2017 and in the months that I’ve been at Kainos, I’ve realised how grateful I am for trusting my gut and not going to University as a full-time student. 
+As you might have guessed from the title - I haven’t followed the traditional route when it comes to my education or my career.  I’m an Apprentice Software Engineer at Kainos, a Belfast based, digital technology company. I started back in September 2017 and in the months that I’ve been at Kainos, I’ve realised how grateful I am for trusting my gut and not going to University as a full-time student. 
+
+I do want to highlight though, that this blog post isn't about convincing people that full time university is 'bad' just because I didn't go down that route; nor is this blog about bragging that I have a job most 19-year-olds wouldn't find themselves in. It's just going to explain why an apprenticeship was right for me personally. If you think it would suit you too, or if you have any questions, then you can feel free to <a href="http://squinnie.com//pages/contact.html">get in touch with me.<a>
 
 Just like a lot of other 18-year-olds right now, last year I was busy sorting out my university applications; I struggled to pick any particular course because I didn’t exactly know what I wanted to do. 
 
