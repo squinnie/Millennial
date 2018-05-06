@@ -7,7 +7,9 @@ google-ID: 'UA-112060364-2'
 
 menu:
 # add in later - {name: 'Technical Blogs', folder: 'pages', file: 'resources.html'}
-- {name: 'A Day in the Life...', folder: 'pages', file: 'a-day-in-the-life.html'}
+- {name: 'Blogs', folder: 'pages', file: 'blogs.html'}
+- {name: 'Tech Articles', folder: 'pages', file: 'coming-soon.html'}
+- {name: 'Portfolio', folder: 'pages', file: 'coming-soon.html'}
 - {name: 'My Experience', folder: 'pages', file: 'experience.html'}
 - {name: 'Contact Me', folder: 'pages', file: 'contact.html'}
 
