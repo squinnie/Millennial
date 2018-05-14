@@ -2,7 +2,7 @@
 layout: post
 title: "Why I chose an Apprenticeship over University"
 author: "Sarah Quinn"
-categories: a-day-in-the-life
+categories: publish-later
 tags: [sample]
 image: uni-vs-apprenticeship.jpg
 ---
