@@ -1,0 +1,30 @@
+#nav_icon {
+    padding-top: 7%;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+    padding-left: 3%;
+}
+
+#main_title {
+    font-size: medium;
+    font-weight: bold;
+}
+
+#main_nav {
+   background-color: rgb(112, 112, 112);
+}
+
