@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/valence_arousal.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <nav id="main_nav">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo" id="main_title">Affective State Profile</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="valence_arousal.html">Log Valence & Arousal</a></li>
+        <li><a href="chart.html">View Breakdown Charts</a></li>
+    </ul>
+    <br>
+
+    
+    <br>
+    <!-- Form Start -->
+    <div class="row center-align">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col offset-s2 s4">
+                    <p>Event Log Date <p id="date"></p></p>
+                </div>
+                <div class="input-field col s4">
+                    <p>Event Log Time <p id="time"></p></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col offset-s2 s8">
+                    <input id="event_name" type="text" class="validate">
+                    <label for="event_name">Event Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col offset-s2 s8">
+                    <div>
+                        <select>
+                          <option value="" disabled selected>Valence Level</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Valence Level</label>
+                      </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="input-field col offset-s2 s8">
+                    <div>
+                        <select>
+                          <option value="" disabled selected>Arousal Level</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Arousal Level</label>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col offset-s2 s8">
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Event Notes (optional)</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+        </form>
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/valence_arousal.js"></script>
+</body>
+
+</html>
