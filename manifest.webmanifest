@@ -1,8 +1,8 @@
 {
     "name": "My Progressive Web App",
     "short_name": "My PWA",
-    "start_url": "./",
-    "display": "standalone",
+    "start_url": "/?source=pwa",
+    "display": "fullscreen",
     "background_color": "red",
     "theme_color": "red",
     "description": "A dead simple progressive web app",
