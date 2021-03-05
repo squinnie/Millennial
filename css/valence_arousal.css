@@ -1,0 +1,14 @@
+
+nav {
+     text-align: center;
+     padding-left: 3%;
+ }
+
+ #main_title {
+     font-size: medium;
+     font-weight: bold;
+ }
+
+ #main_nav {
+    background-color: rgb(112, 112, 112);
+}
