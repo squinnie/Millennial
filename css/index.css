@@ -27,3 +27,12 @@ nav {
     margin-right: 5px;
     background-color: rgb(116, 164, 253);
 }
+
+#modal_header {
+    font-size: medium;
+}
+
+.modal_text {
+    font-size: small;
+    color: darkgray;
+}

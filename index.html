@@ -45,7 +45,21 @@
   <br>
   <h5>Model of Affect</h5>
   <img src="media/model_of_affect.png" id="model_of_affect" />
-  <a class="waves-effect waves-light btn-small" id="how_button">How to Use</a>
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="how_button">Modal</a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 id="modal_header">Logging your Affective State</h4>
+        <p class="modal_text">Record your valence and arousal using the LOG feature.</p>
+        <p class="modal_text">The vertical VALENCE scale ranges from ranges from “unpleasant”(1) to “pleasant”(10).</p>
+        <p class="modal_text">The horizontal AROUSAL scale ranges from "low arousal/deactivation"(1) to “high arousal/activation”(10).</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+      </div>
+    </div>
 
   <script src="js/main.js"></script>
   <script src="js/index.js"></script>
