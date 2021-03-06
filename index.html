@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>My Affective State Profile</title>
-  
-<!--Splash Screen Images-->
+
+  <!--Splash Screen Images-->
   <link rel="apple-touch-startup-image" href="media/app_logo_512.png">
- 
-    <!--Import Google Icon Font-->
+
+  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
+
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
@@ -43,27 +43,39 @@
     <li><a href="chart.html">View Breakdown Charts<i class="material-icons">insert_chart</i></a></li>
   </ul>
   <br>
-  <h5>Model of Affect</h5>
-  <img src="media/model_of_affect.png" id="model_of_affect" />
-    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="how_button">Modal</a>
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4 id="modal_header">Logging your Affective State</h4>
-        <p class="modal_text">Record your valence and arousal using the LOG feature.</p>
-        <p class="modal_text">The vertical VALENCE scale ranges from ranges from “unpleasant”(1) to “pleasant”(10).</p>
-        <p class="modal_text">The horizontal AROUSAL scale ranges from "low arousal/deactivation"(1) to “high arousal/activation”(10).</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+<!--Text Modal-->
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card white darken-1">
+        <div class="card-content grey-text">
+          <span class="card-title">Model of Affect</span>
+          <img src="media/model_of_affect.png" id="model_of_affect" />
+        </div>
       </div>
     </div>
+<!--Diagram/Model Modal-->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card white darken-1">
+          <div class="card-content grey-text">
+            <span class="card-title">Valence & Arousal</span>
+            <p>In general, emotional experiences can be described by two terms:</p>
+            <ul>
+              <li> Valence;</li>
+              <li> Arousal.</li>
+            </ul>
+            <p>Though the two terms are often confused, the difference is pretty simple.</p>
+            <br>
+            <p>Valence is positive or negative affectivity, whereas arousal measures how calming or exciting the
+              information is.</p>
+          </div>
+        </div>
+      </div>
 
-  <script src="js/main.js"></script>
-  <script src="js/index.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/index.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>

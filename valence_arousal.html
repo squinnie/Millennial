@@ -28,17 +28,43 @@
     </ul>
     <br>
 
-    
     <br>
     <!-- Form Start -->
     <div class="row center-align">
         <form class="col s12">
             <div class="row">
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="how_button">How to Use</a>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4 id="modal_header">Logging your Affective State</h4>
+                        <br>
+                        <p class="modal_text">Record your valence and arousal using the LOG feature.</p>
+                        <p class="modal_text">The vertical VALENCE scale ranges from ranges from “unpleasant”(1) to
+                            “pleasant”(10).</p>
+                        <p class="modal_text">The horizontal AROUSAL scale ranges from "low arousal/deactivation"(1) to
+                            “high arousal/activation”(10).</p>
+                        <br>
+                        <p class="modal_text">You may view a summary and breakdown charts of your valence and arousal
+                            levels over time.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="input-field col offset-s2 s4">
-                    <p>Event Log Date <p id="date"></p></p>
+                    <p>Event Log Date
+                    <p id="date"></p>
+                    </p>
                 </div>
                 <div class="input-field col s4">
-                    <p>Event Log Time <p id="time"></p></p>
+                    <p>Event Log Time
+                    <p id="time"></p>
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -49,41 +75,36 @@
             </div>
             <div class="row">
                 <div class="input-field col offset-s2 s8">
-                    <div>
-                        <select>
-                          <option value="" disabled selected>Valence Level</option>
-                          <option value="1">Option 1</option>
-                          <option value="2">Option 2</option>
-                          <option value="3">Option 3</option>
-                        </select>
-                        <label>Valence Level</label>
-                      </div>
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="valence" min="0" max="10" />
+                            <label for="valence">Valence Level</label>
+
+                        </p>
+                    </form>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="input-field col offset-s2 s8">
-                    <div>
-                        <select>
-                          <option value="" disabled selected>Arousal Level</option>
-                          <option value="1">Option 1</option>
-                          <option value="2">Option 2</option>
-                          <option value="3">Option 3</option>
-                        </select>
-                        <label>Arousal Level</label>
-                      </div>
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="arousal" min="0" max="10" />
+                            <label for="arousal">Arousal Level</label>
+                        </p>
+                    </form>
                 </div>
             </div>
             <div class="row">
                 <form class="col s12">
-                  <div class="row">
-                    <div class="input-field col offset-s2 s8">
-                      <textarea id="textarea1" class="materialize-textarea"></textarea>
-                      <label for="textarea1">Event Notes (optional)</label>
+                    <div class="row">
+                        <div class="input-field col offset-s2 s8">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Event Notes (optional)</label>
+                        </div>
                     </div>
-                  </div>
                 </form>
-              </div>
+            </div>
         </form>
     </div>
 

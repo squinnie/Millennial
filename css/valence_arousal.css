@@ -12,3 +12,16 @@ nav {
  #main_nav {
     background-color: rgb(112, 112, 112);
 }
+
+#how_button {
+    margin-top: 2%;
+}
+
+#modal_header {
+    font-size: large;
+}
+
+.modal_text {
+    font-size: medium;
+    color: darkgray;
+}
