@@ -15,3 +15,15 @@ nav {
  #main_nav {
     background-color: rgb(112, 112, 112);
 }
+
+#model_of_affect {
+    padding-top: 10%;
+    height: auto;
+    width: 95%;
+}
+
+#how_button {
+    margin-top: 10%;
+    margin-right: 5px;
+    background-color: rgb(116, 164, 253);
+}

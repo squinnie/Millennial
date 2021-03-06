@@ -1,17 +1,23 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-   <!--Import Google Icon Font-->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!--Import materialize.css-->
-   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-   <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
-
-   <!--Let browser know website is optimized for mobile-->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <meta charset="utf-8">
   <title>My Affective State Profile</title>
+  
+<!--Splash Screen Images-->
+  <link rel="apple-touch-startup-image" href="media/app_logo_512.png">
+ 
+    <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="media/app_logo_192.png">
@@ -21,26 +27,29 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="My Affective State Profile">
 </head>
+
 <body class="fullscreen">
 
   <nav id="main_nav">
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo" id="main_title">Affective State Profile</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#!" class="brand-logo" id="main_title">Affective State Profile</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-</nav>
+  </nav>
 
-<ul class="sidenav" id="mobile-demo">
+  <ul class="sidenav" id="mobile-demo">
     <li><a href="index.html">Home<i class="material-icons">home</i></a></li>
     <li><a href="valence_arousal.html">Log Valence & Arousal<i class="material-icons">edit</i></a></li>
     <li><a href="chart.html">View Breakdown Charts<i class="material-icons">insert_chart</i></a></li>
-</ul>
-<br>
-<img src="media/app_logo_192.png" id="main_logo"/>
-<h2>PWA</h2>
+  </ul>
+  <br>
+  <h5>Model of Affect</h5>
+  <img src="media/model_of_affect.png" id="model_of_affect" />
+  <a class="waves-effect waves-light btn-small" id="how_button">How to Use</a>
 
   <script src="js/main.js"></script>
   <script src="js/index.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
+
 </html>
