@@ -16,6 +16,12 @@ nav {
     background-color: rgb(112, 112, 112);
 }
 
+#main_image {
+    padding-top: 15%;
+    width: 85%;
+    height: auto;
+}
+
 #model_of_affect {
     padding-top: 10%;
     height: auto;
