@@ -89,13 +89,9 @@ function submit_event(){
       // DEBUGGING 
       // console.log(event);
       // console.log(localStorage.length);
-      //document.getElementById("event_form").reset();
-      document.getElementById("valence").value = 5;
-      document.getElementById("arousal").value = 5;
-      
-      document.getElementById("event_name").value = '';
-      document.getElementById("eventNotes").value = '';
-     
+
+      // reset the page for new entry
+     location.reload();
     }
 
     
