@@ -25,3 +25,12 @@ nav {
     font-size: medium;
     color: darkgray;
 }
+
+#toast-container {
+    width: 80% !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: 40%;
+    left: 15%;
+    opacity: .85;
+  }

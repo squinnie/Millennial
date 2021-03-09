@@ -24,7 +24,7 @@
  
     <ul class="sidenav" id="mobile-demo">
         <li><a href="index.html">Home<i class="material-icons">home</i></a></li>
-        <li><a href="index.html">About<i class="material-icons">content_paste</i></a></li>
+        <li><a href="about.html">About<i class="material-icons">content_paste</i></a></li>
         <li><a href="valence_arousal.html">Log Valence & Arousal<i class="material-icons">edit</i></a></li>
         <li><a href="chart.html">View Breakdown Charts<i class="material-icons">insert_chart</i></a></li>
       </ul>
@@ -33,10 +33,10 @@
     <br>
     <!-- Form Start -->
     <div class="row center-align">
-        <form class="col s12">
+        <form class="col s12" id="event_form">
             <div class="row">
                 <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1" id="how_button">How to Use</a>
+                <a class="waves-effect waves-light btn modal-trigger grey" href="#modal1" id="how_button">How to Use</a>
 
                 <!-- Modal Structure -->
                 <div id="modal1" class="modal">
@@ -71,7 +71,7 @@
             </div>
             <div class="row">
                 <div class="input-field col offset-s2 s8">
-                    <input id="event_name" type="text" class="validate">
+                    <input id="event_name" type="text" class="validate" required="" aria-required="true">
                     <label for="event_name">Event Name</label>
                 </div>
             </div>
@@ -101,11 +101,14 @@
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col offset-s2 s8">
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
-                            <label for="textarea1">Event Notes (optional)</label>
+                            <textarea id="eventNotes" class="materialize-textarea"></textarea>
+                            <label for="eventNotes">Event Notes (optional)</label>
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class="row">
+                <a onclick="submit_event()" class="btn-floating btn-large waves-effect waves-light teal-lighten"><i class="material-icons">check</i></a>
             </div>
         </form>
     </div>
