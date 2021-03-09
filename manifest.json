@@ -1,6 +1,6 @@
 {
-  "name": "Hello World",
-  "short_name": "Hello",
+  "name": "My Affective State Profile",
+  "short_name": "Affective State Profile",
   "description":"Basic PWA",
   "icons": [{
     "src": "media/app_logo_192.png",

@@ -91,6 +91,7 @@ function submit_event(){
       // console.log(localStorage.length);
 
       // reset the page for new entry
+      window.alert("Event Submitted.");
      location.reload();
     }
 
