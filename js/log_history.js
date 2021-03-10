@@ -40,33 +40,33 @@ if (localStorage.length == 0){
 
   for (i = 1; i<localStorage.length+1; i++){
 
-    event = JSON.parse(localStorage.getItem(i));
-    if (event != null){
+    logEvent = JSON.parse(localStorage.getItem(i));
+    if (logEvent != null){
 
 
       pValence = document.createElement("P");
-      pValence.innerText = "Valence: " + event.valence;
+      pValence.innerText = "Valence: " + logEvent.valence;
 
       pArousal = document.createElement("P");
-      pArousal.innerText = "Arousal: " + event.arousal;
+      pArousal.innerText = "Arousal: " + logEvent.arousal;
 
       pDate = document.createElement("P");
-      pDate.innerText = "Date: " + event.date;
+      pDate.innerText = "Date: " + logEvent.date;
 
       pTime = document.createElement("P");
-      pTime.innerText = "Time: " + event.time;
+      pTime.innerText = "Time: " + logEvent.time;
 
 
       pNotesTitle = document.createElement("P");
       pNotesTitle.innerText = "Notes:";
 
       pNotes = document.createElement("P");
-      pNotes.innerText = event.notes;
+      pNotes.innerText = logEvent.notes;
 
       span = document.createElement("SPAN");
       span.className = "card-title";
       span.classList.add("span_center");
-      span.innerText = event.name;
+      span.innerText = logEvent.name;
 
       divInner = document.createElement("DIV");
       divInner.className = "card-content white-text";
