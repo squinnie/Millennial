@@ -15,18 +15,42 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Modal.init(elems);
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var dateOptions = {format:"dd/mm/yyyy", showClearBtn: "true"}
+    var instances = M.Datepicker.init(elems, dateOptions);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.timepicker');
+    var timeOptions = {showClearBtn: "true"};
+    var instances = M.Timepicker.init(elems, timeOptions);
+  });
+
+  // function to format current time for timepicker
+  function formatAMPM(date) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return strTime;
+  }
+
 // Date stamp for event
 n =  new Date();
 y = n.getFullYear();
 m = n.getMonth() + 1;
 d = n.getDate();
-var date =  m + "/" + d + "/" + y;
-document.getElementById("date").innerHTML = date;
+var currentDate =  m + "/" + d + "/" + y;
+document.getElementById("datepicker").value = currentDate;
 
 // Time stamp for event
 var dt = new Date();
-var time = dt.toLocaleTimeString();
-document.getElementById("time").innerHTML = time;
+var currentTime = formatAMPM(dt);
+document.getElementById("timepicker").value = currentTime;
 
 // check sliders have been used to set values 
 var valenceChanged = false;
@@ -44,6 +68,8 @@ arousal.onchange = function(){
 function submit_event(){
 
     // Get form data
+    var date = document.getElementById("datepicker").value;
+    var time = document.getElementById("timepicker").value;;
     var eventName = document.getElementById("event_name").value;
     var valence = document.getElementById("valence").value;;
     var arousal = document.getElementById("arousal").value;; 
@@ -60,6 +86,18 @@ function submit_event(){
       "notes": notes
     }
 
+    // Validate NAME
+    if (
+      date == ''
+    ){
+      M.toast({html: 'Event Date must have a value.', classes: 'grey rounded'})
+    }
+        // Validate NAME
+    if (
+      time == ''
+    ){
+      M.toast({html: 'Event Time must have a value.', classes: 'grey rounded'})
+    }
     // Validate NAME
     if (
       eventName == ''
@@ -81,6 +119,8 @@ function submit_event(){
     // Validate ALL and save to storage
     if (
       eventName != '' &&
+      date != '' &&
+      time != '' &&
       valenceChanged == true &&
       arousalChanged == true
     ){
