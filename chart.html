@@ -27,9 +27,32 @@
       <li><a href="chart.html">View Breakdown Charts<i class="material-icons">insert_chart</i></a></li>
       <li><a href="log_history.html">View Entry log History<i class="material-icons">content_paste</i></a></li>
     </ul>
-        <br>
     <br>
-    <br>
+    <!-- log summary text - create <p> and fill with N/A. JS will update value when # of events logged > 0-->
+    <div class="row">
+      <div class="input-field col offset-s2 s6">
+         <p style="font-weight: bold;"># of Events:</p>
+      </div>
+      <div class="input-field col s2">
+        <p id="events_num_label">N/A</p>
+     </div>
+    </div>
+    <div class="row">
+      <div class="input-field col offset-s2 s6 short">
+         <p style="font-weight: bold;">Avg. Valence Score:</p>
+      </div>
+      <div class="input-field col s2 short">
+        <p id="avg_valence_label">N/A</p>
+     </div>
+    </div>
+    <div class="row">
+      <div class="input-field col offset-s2 s6 short">
+         <p style="font-weight: bold;">Avg. Arousal Score:</p>
+      </div>
+      <div class="input-field col s2 short">
+        <p id="avg_arousal_label">N/A</p>
+     </div>
+    </div>
     <div id="chart_div" style="text-align: center;"></div>
     <br>
     <br>

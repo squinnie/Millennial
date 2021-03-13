@@ -21,14 +21,14 @@
         </div>
     </nav>
 
- 
+
     <ul class="sidenav" id="mobile-demo">
         <li><a href="index.html">Home<i class="material-icons">home</i></a></li>
         <li><a href="about.html">About<i class="material-icons">help</i></a></li>
         <li><a href="valence_arousal.html">Log Valence & Arousal<i class="material-icons">edit</i></a></li>
         <li><a href="chart.html">View Breakdown Charts<i class="material-icons">insert_chart</i></a></li>
         <li><a href="log_history.html">View Entry log History<i class="material-icons">content_paste</i></a></li>
-      </ul>
+    </ul>
     <br>
 
     <br>
@@ -42,7 +42,7 @@
                 <!-- Modal Structure -->
                 <div id="modal1" class="modal">
                     <div class="modal-content">
-                        <h4 id="modal_header">Logging your Affective State</h4>
+                        <h4 class="modal_header">Logging your Affective State</h4>
                         <br>
                         <p class="modal_text">Record your valence and arousal using the LOG feature.</p>
                         <p class="modal_text">The vertical VALENCE scale ranges from ranges from “unpleasant”(1) to
@@ -103,11 +103,27 @@
                             <textarea id="eventNotes" class="materialize-textarea"></textarea>
                             <label for="eventNotes">Event Notes (optional)</label>
                         </div>
+                        <div class="input-field col s1">
+                            <!-- Modal Trigger -->
+                            <a class="modal-trigger" href="#modal2"><i id="info_button" class="material-icons">info</i></a>
+
+                            <!-- Modal Structure -->
+                            <div id="modal2" class="modal">
+                                <div class="modal-content">
+                                    <h4 class="modal_header">Event Details</h4>
+                                    <p class="modal_text">In this section you can record some information regarding the event surrounding the entry (e.g. the nature of the event, activities involved, level of social interaction involved, etc.).</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
             <div class="row">
-                <a onclick="submit_event()" class="btn-floating btn-large waves-effect waves-light teal-lighten"><i class="material-icons">check</i></a>
+                <a onclick="submit_event()" class="btn-floating btn-large waves-effect waves-light teal-lighten"><i
+                        class="material-icons">check</i></a>
             </div>
         </form>
     </div>

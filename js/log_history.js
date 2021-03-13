@@ -1,13 +1,62 @@
+// initialise materialize elements
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems);
   });
 
 
+// DISPLAY A SHORT TEXT SUMMARY OF THE USERS OVERALL VALENCE & AROUSAL LOGGED
+// calculate number of entries
+var numEntries = localStorage.length;
+// calculate avg valence + arousal
+var tempTotalV = 0;
+var tempTotalA = 0;
+for (i = 1; i < localStorage.length + 1; i++) {
+  logEvent = JSON.parse(localStorage.getItem(i));
+  if (logEvent != null) {
+    tempTotalV = tempTotalV + parseInt(logEvent.valence);
+    tempTotalA = tempTotalA + parseInt(logEvent.arousal);
+  }
+}
+var avgValence = (tempTotalV/numEntries).toFixed(2); // calc average to 2 DP
+var avgArousal = (tempTotalA/numEntries).toFixed(2); // calc average to 2 DP
+var avgValenceDescription;
+var avgArousalDescription;
+// set valence summary text
+switch(true) {
+  case (avgValence > 5.5 ):
+    avgValenceDescription = "The events you have logged tend to feel PLEASANT.";
+    break;
+  case (5.5 > avgValence >=4.5):
+    avgValenceDescription = "The events you have logged tend to feel NEUTRAL, rather than pleasant or unpleasant.";
+    break;
+  default:
+    avgValenceDescription = "The events you have logged tend to feel UNPLEASANT.";
+}
+// set arousal summary text
+switch(true) {
+  case (avgArousal > 5.5 ):
+    avgArousalDescription = "The events you have logged tend to make you feel ACTIVATED.";
+    break;
+  case (5.5 > avgArousal >=4.5):
+    avgArousalDescription = "The events you have logged tend to make you feel NEUTRAL, rather than activated or deactivated.";
+    break;
+  default:
+    avgArousalDescription = "The events you have logged tend to make you feel DEACTIVATED.";
+}
+// set HTML elements to display the summaries 
+document.getElementById("valence_description").innerHTML = avgValenceDescription;
+document.getElementById("arousal_description").innerHTML = avgArousalDescription;
+
+
 if (localStorage.length == 0){
+
+      // update the page elements if there are no entries to report on
+      document.getElementById("valence_description").innerHTML = '';
+      document.getElementById("arousal_description").innerHTML = '';
       alertText = document.createElement("P");
       alertText.innerText = "Please begin logging entries to view your history here.";
-
+    
       span = document.createElement("SPAN");
       span.className = "card-title";
       span.classList.add("span_center");
@@ -37,13 +86,13 @@ if (localStorage.length == 0){
 }
 
 
-
+// loop through DB in localStorage and create summary cards for each one (DOM)
   for (i = 1; i<localStorage.length+1; i++){
 
     logEvent = JSON.parse(localStorage.getItem(i));
     if (logEvent != null){
 
-
+      //  DOM elements 
       pValence = document.createElement("P");
       pValence.innerText = "Valence: " + logEvent.valence;
 

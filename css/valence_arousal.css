@@ -17,7 +17,7 @@ nav {
     margin-top: 2%;
 }
 
-#modal_header {
+.modal_header {
     font-size: large;
 }
 
@@ -34,3 +34,7 @@ nav {
     left: 15%;
     opacity: .85;
   }
+
+#info_button {
+    color: #26a69a;
+}
